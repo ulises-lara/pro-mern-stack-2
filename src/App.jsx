@@ -14,6 +14,14 @@ class IssueTable extends React.Component {
     }
 }
 
+class IssueAdd extends React.Component {
+    render() {
+        return (
+            <div> This is a placeholder for a form to add an issue. </div>
+        );
+    }
+}
+
 class HelloWorld extends React.Component {
     render() {
         const continents = ["Africa", "America", "Asia", "Australia", "Europe"];
