@@ -1,3 +1,11 @@
+class IssueFilter extends React.Component {
+    render() {
+        return (
+            <div> This is a placeholder for the issue filter. </div>
+        );
+    }
+}
+
 class HelloWorld extends React.Component {
     render() {
         const continents = ["Africa", "America", "Asia", "Australia", "Europe"];
