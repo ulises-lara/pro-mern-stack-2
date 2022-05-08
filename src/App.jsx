@@ -12,10 +12,6 @@ class HelloWorld extends React.Component {
     }
 }
 
-const element = (
-    <div title="Outer div">
-        <h1>{message}</h1>
-    </div>
-);
+const element = <HelloWorld />;
 
 ReactDOM.render(element, document.getElementById("content"));
