@@ -6,6 +6,14 @@ class IssueFilter extends React.Component {
     }
 }
 
+class IssueTable extends React.Component {
+    render() {
+        return (
+            <div> This is a placeholder for a table of issues. </div>
+        );
+    }
+}
+
 class HelloWorld extends React.Component {
     render() {
         const continents = ["Africa", "America", "Asia", "Australia", "Europe"];
