@@ -22,6 +22,21 @@ class IssueAdd extends React.Component {
     }
 }
 
+class IssueList extends React.Component {
+    render() {
+        return (
+            <React.Fragment>
+                <h1> Issue Tracker </h1>
+                <IssueFilter />
+                <hr />
+                <IssueTable />
+                <hr />
+                <IssueAdd />
+            </React.Fragment>
+        );
+    }
+}
+
 class HelloWorld extends React.Component {
     render() {
         const continents = ["Africa", "America", "Asia", "Australia", "Europe"];
