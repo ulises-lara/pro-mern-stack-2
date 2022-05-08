@@ -51,6 +51,6 @@ class HelloWorld extends React.Component {
     }
 }
 
-const element = <HelloWorld />;
+const element = <IssueList />;
 
 ReactDOM.render(element, document.getElementById("content"));
