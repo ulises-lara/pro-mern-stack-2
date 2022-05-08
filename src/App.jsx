@@ -30,6 +30,7 @@ class IssueFilter extends React.Component {
 class IssueTable extends React.Component {
     render() {
         const rowStyle = { border: "1px solid silver", padding: 4 };
+        const issueRows = issues.map(issue => <IssueRow rowStyle={rowStyle} issue={issue} />);
 
         return (
             <table style={{ borderCollapse: "collapse" }}>
@@ -40,7 +41,7 @@ class IssueTable extends React.Component {
                     </tr>
                 </thead>
                 <tbody>
-                    {issues.map(issue => <IssueRow rowStyle={rowStyle} issue={issue} />)}
+                    {issueRows}
                 </tbody>
             </table>
         );
