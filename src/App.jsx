@@ -34,7 +34,7 @@ class IssueTable extends React.Component {
     }
 
     render() {
-        const issueRows = initialIssues.map(issue => <IssueRow key={issue.id} issue={issue} />);
+        const issueRows = this.state.issues.map(issue => <IssueRow key={issue.id} issue={issue} />);
 
         return (
             <table className="bordered-table">
