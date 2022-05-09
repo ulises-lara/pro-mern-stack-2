@@ -33,6 +33,14 @@ class IssueTable extends React.Component {
         this.state = { issues: [] };
     }
 
+    createIssue(issue) {
+        issue.id = this.state.issues.length + 1;
+        issue.created = new Date();
+        const newIssueList = this.state.issues.slice();
+        newIssueList.push(issue);
+        this.setState({ issues: newIssueList });
+    }
+
     componentDidMount() {
         this.loadData();
     }
