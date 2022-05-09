@@ -19,6 +19,12 @@ const initialIssues = [
     },
 ];
 
+const sampleIssue = {
+    status: "New",
+    owner: "Pieta",
+    title: "Completion date should be optional",
+};
+
 class IssueFilter extends React.Component {
     render() {
         return (
@@ -31,6 +37,10 @@ class IssueTable extends React.Component {
     constructor() {
         super();
         this.state = { issues: [] };
+
+        setTimeout(() => {
+            this.createIssue(sampleIssue);
+        }, 2000);
     }
 
     createIssue(issue) {
