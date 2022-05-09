@@ -28,6 +28,10 @@ class IssueFilter extends React.Component {
 }
 
 class IssueTable extends React.Component {
+    constructor() {
+        super();
+    }
+
     render() {
         const issueRows = initialIssues.map(issue => <IssueRow key={issue.id} issue={issue} />);
 
