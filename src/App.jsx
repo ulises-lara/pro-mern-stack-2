@@ -30,6 +30,7 @@ class IssueFilter extends React.Component {
 class IssueTable extends React.Component {
     constructor() {
         super();
+        this.state = { issues: initialIssues };
     }
 
     render() {
