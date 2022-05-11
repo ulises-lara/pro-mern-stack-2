@@ -87,7 +87,11 @@ class IssueAdd extends React.Component {
 
     render() {
         return (
-            <div> This is a placeholder for a form to add an issue. </div>
+            <form>
+                <input type="text" name="owner" placeholder="Owner" />
+                <input type="text" name="title" placeholder="Title" />
+                <button> Add </button>
+            </form>
         );
     }
 }
@@ -95,7 +99,7 @@ class IssueAdd extends React.Component {
 class IssueList extends React.Component {
     constructor() {
         super();
-        
+
         this.state = { issues: [] };
         this.createIssue = this.createIssue.bind(this);
     }
